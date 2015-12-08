@@ -670,7 +670,7 @@
             element.bind('mouseup', unbindMoveListen);
             element.bind('touchend', unbindMoveListen);
             element.bind('touchcancel', unbindMoveListen);
-            event.stopPropagation();
+            // event.stopPropagation(); // This line is blocking events of internal elements.
           };
 
           /**
